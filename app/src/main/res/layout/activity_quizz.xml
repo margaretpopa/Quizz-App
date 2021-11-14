@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background_quizz"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Quizz">
+
+
+    <TextView
+        android:id="@+id/popa_margaret_tv_nr_intrebari"
+        style="@style/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:textStyle="bold"
+        android:text="@string/nr_intrebari"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        app:drawableEndCompat="@drawable/intrebari"
+        app:layout_constraintEnd_toStartOf="@id/popa_margaret_tv_scor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/popa_margaret_tv_scor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/scor"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:padding="10dp"
+        style="@style/textview"
+        app:drawableLeftCompat="@drawable/scor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/popa_margaret_tv_nr_intrebari"
+        tools:ignore="TextContrastCheck" />
+
+
+    <ListView
+        android:id="@+id/popa_margaret_lv_raspunsuri"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:dividerHeight="4dp"
+        style="@style/textview_raspuns"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/popa_margaret_tv_intrebare"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/popa_margaret_btn_finish"
+        style="@style/buton_back"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="32dp"
+        android:text="@string/finish"
+        android:textStyle="bold"
+        android:textColor="#FAFAFA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/popa_margaret_btn_next"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/popa_margaret_btn_next"
+        style="@style/button_next"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="32dp"
+        android:textStyle="bold"
+        android:text="@string/next"
+        android:textColor="#FAFAFA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/popa_margaret_btn_finish" />
+
+
+    <TextView
+        android:id="@+id/popa_margaret_tv_intrebare"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/intrebare"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/intrebare"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/popa_margaret_lv_raspunsuri"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/popa_margaret_tv_nr_intrebari"
+        tools:ignore="TextContrastCheck" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

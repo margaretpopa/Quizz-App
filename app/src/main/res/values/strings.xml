@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">First Activity</string>
+    <string name="textpoza">textpoza</string>
+    <string name="start">Start</string>
+    <string name="testeaza_ti_cunostintele">Ce stii despre invatamant ?</string>
+    <string name="nr_intrebari">Nr intrebari</string>
+    <string name="scor">Scor</string>
+    <string name="next">next</string>
+    <string name="finish">Finish</string>
+    <string name="intrebare">Intrebare</string>
+    <string name="felicitari_scorul_tau_este_de_1">Felicitari, acum stii mai multe despre invatamant! </string>
+    <string name="again">again</string>
+    <string name="descrierefelicitari">descrierefelicitari</string>
+    <string name="_10">10</string>
+    <string name="puncte">puncte.</string>
+    <string name="prima">1/</string>
+    <string name="scor0">0</string>
+    <string name="bara_intrebari">/</string>
+    <string name="alege_un_raspuns">Alege un raspuns!</string>
+    <string name="key">scorulFinal</string>
+</resources>
