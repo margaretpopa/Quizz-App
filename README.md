@@ -12,7 +12,7 @@ The application starts with a welcome activity.
 ### If the user does not choose anything, he receives a message to choose an answer.
 ![image](https://user-images.githubusercontent.com/72069131/143021039-9e92be22-f201-48d2-8060-885d754ada6c.png)
 
-### The score and questions are highlighted at the top of the screen. After choosing an answer, the correct answer is green, and the wrong answer is red. If the answer is correct, the score increases by 1 point. Otherwise, the score remains the same. 
+### The score and questions are highlighted at the top of the screen. After the user has chosen, the correct answer is colored green, and the wrong answer is colored red. If the answer is correct, the score increases by 1 point. Otherwise, the score remains the same. 
 ![image](https://user-images.githubusercontent.com/72069131/143021280-43b1273c-73db-4ea8-957a-aaecca80a006.png) ![image](https://user-images.githubusercontent.com/72069131/143021792-e82421a2-7e57-43bb-a46e-be3033fb02cb.png) ![image](https://user-images.githubusercontent.com/72069131/143022084-96aa7ef3-bc53-42f3-842e-d7a6302bc96a.png)
 
 
