@@ -1,7 +1,7 @@
 # Quizz-App
 
 ## Quizz - Start
-The application starts with a welcome activity.
+### The application starts with a welcome activity.
 
 ![image](https://user-images.githubusercontent.com/72069131/143020929-83a7b241-7fc6-4910-a494-6a36f98329d3.png)
 
