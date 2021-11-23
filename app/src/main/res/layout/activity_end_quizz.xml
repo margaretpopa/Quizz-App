@@ -43,11 +43,10 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 
-
     <ImageView
         android:id="@+id/popa_margaret_imgviewfelicitari"
-        android:layout_width="364dp"
-        android:layout_height="531dp"
+        android:layout_width="351dp"
+        android:layout_height="461dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:contentDescription="@string/descrierefelicitari"
