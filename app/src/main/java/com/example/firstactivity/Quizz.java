@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -22,10 +23,11 @@ public class Quizz extends AppCompatActivity {
     private ListView lv_raspunsuri;
     private Button btn_finish;
     private Button btn_next;
-    private Integer NrIntrebare =0;
+    private Integer NrIntrebare = 0;
     private boolean itemApasat=false;
     public Integer nr_scor=0;
 
+    public static String cheie="SCOR";
 
     private Intrebare[] intrebari={
             new Intrebare("Cate saptamani are un an scolar?",1, new String[] {"12","34","8"}),
@@ -54,8 +56,13 @@ public class Quizz extends AppCompatActivity {
         return new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-            Intent intent= new Intent(getApplicationContext(),EndQuizz.class);
-            startActivity(intent);
+                Intent intent= new Intent(getApplicationContext(),EndQuizz.class);
+
+
+                Bundle bundle = new Bundle();
+                bundle.putString(cheie,scor.getText().toString());
+                intent.putExtras(bundle);
+                startActivity(intent);
             }
         };
     }

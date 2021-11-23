@@ -13,19 +13,29 @@ import java.io.Serializable;
 
 public class EndQuizz extends AppCompatActivity {
     private Button btn_dinnou;
+    private TextView tv_scor_final;
 
+    public static String cheie="SCOR";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_end_quizz);
         initComponents();
-        btn_dinnou.setOnClickListener(reiaQuizEvent());
+        //primire scor
+        Bundle bundle = getIntent().getExtras();
+        String value = bundle.getString(cheie);
+        if (bundle.containsKey(Quizz.cheie))    {
+            tv_scor_final.setText(value);
+        }
 
+
+        btn_dinnou.setOnClickListener(reiaQuizEvent());
     }
 
     private void initComponents() {
         btn_dinnou=findViewById(R.id.popa_margaret_btn_again);
+        tv_scor_final=findViewById(R.id.popa_margaret_tv_scor_final);
     }
 
     private View.OnClickListener reiaQuizEvent() {

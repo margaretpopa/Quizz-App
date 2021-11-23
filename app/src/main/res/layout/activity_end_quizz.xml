@@ -26,20 +26,22 @@
 
     <TextView
         android:id="@+id/popa_margaret_tv_felicitari"
+        style="@style/button_next"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="32dp"
-        style="@style/button_next"
-        android:textStyle="bold"
-        android:textColor="@color/white"
         android:layout_marginEnd="8dp"
         android:gravity="center"
         android:padding="10dp"
         android:text="@string/felicitari_scorul_tau_este_de_1"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/popa_margaret_tv_scor_final"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 
 
     <ImageView
@@ -52,6 +54,22 @@
         app:layout_constraintBottom_toTopOf="@id/popa_margaret_btn_again"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/popa_margaret_tv_felicitari"
+        app:layout_constraintTop_toBottomOf="@id/popa_margaret_tv_scor_final"
         app:srcCompat="@drawable/felicitari" />
+
+    <TextView
+        android:id="@+id/popa_margaret_tv_scor_final"
+        style="@style/raspuns_final"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:padding="10dp"
+        android:text="@string/scor0"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/popa_margaret_imgviewfelicitari"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/popa_margaret_tv_felicitari" />
 </androidx.constraintlayout.widget.ConstraintLayout>
