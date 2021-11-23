@@ -17,6 +17,6 @@
 
 
 ### At the end, the user receives a greeting message along with the total score and can resume the test if desired.
-![image](https://user-images.githubusercontent.com/72069131/143136012-9f03fa16-9bc4-48ca-a40c-dc151cabab32.png)
+![image](https://user-images.githubusercontent.com/72069131/143136677-50928da6-69fe-410b-8bb5-5f83e4061b0e.png)
 
 
